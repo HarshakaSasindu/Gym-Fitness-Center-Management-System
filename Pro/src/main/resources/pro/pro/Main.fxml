@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1366.0" style="-fx-background-color: #0C243C;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pro.pro.MainController">
+   <children>
+      <AnchorPane fx:id="MainPanel" layoutX="343.0" layoutY="38.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1000.0" style="-fx-background-color: #0C243C; -fx-background-color: #2B4865; -fx-background-radius: 35;">
+         <children>
+            <ImageView fitHeight="233.0" fitWidth="265.0" layoutX="368.0" layoutY="153.0">
+               <image>
+                  <Image url="@Man.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="169.0" layoutY="392.0" text="Buliding Confidence. Building Fitness.">
+               <font>
+                  <Font name="Courier New" size="29.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8692667484283447" green="0.8815789222717285" blue="0.1428484469652176" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.17785234899328858">
+                           <color>
+                              <Color red="0.8692667484283447" green="0.8815789222717285" blue="0.1428484469652176" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.4530201342281878">
+                           <color>
+                              <Color red="0.8692667484283447" green="0.8815789222717285" blue="0.1428484469652176" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7986577181208053">
+                           <color>
+                              <Color red="0.3808933198451996" green="0.8799999952316284" blue="0.14959999918937683" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.3808933198451996" green="0.8799999952316284" blue="0.14959999918937683" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="23.0" layoutY="142.0" prefHeight="544.0" prefWidth="291.0">
+         <children>
+            <VBox layoutX="3.0" layoutY="27.0" prefHeight="513.0" prefWidth="294.0" spacing="20.0">
+               <children>
+                  <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#Attend" prefHeight="58.0" prefWidth="279.0" style="-fx-background-radius: 50; -fx-background-color: #55C2C3;" text="Attendance" textFill="#070707">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/noun-attendance-3574458.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets right="60.0" />
+                     </padding>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#Add" prefHeight="58.0" prefWidth="281.0" style="-fx-background-radius: 50; -fx-background-color: #55C2C3;" text="Add Member" textFill="#070707">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/noun-add-user-1422906.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets right="50.0" />
+                     </padding>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#Find" prefHeight="58.0" prefWidth="281.0" style="-fx-background-radius: 50; -fx-background-color: #55C2C3;" text="Find Member" textFill="#070707">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/noun-search-user-191672.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets right="50.0" />
+                     </padding>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#Payment" prefHeight="58.0" prefWidth="281.0" style="-fx-background-radius: 50; -fx-background-color: #55C2C3;" text="Member Payment" textFill="#070707">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/noun-payment-1125243.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#Mail" prefHeight="58.0" prefWidth="281.0" style="-fx-background-radius: 50; -fx-background-color: #55C2C3;" text="E-Mails" textAlignment="RIGHT" textFill="#070707">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/noun-mail-716638.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets right="90.0" />
+                     </padding>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#Report" prefHeight="58.0" prefWidth="281.0" style="-fx-background-radius: 50; -fx-background-color: #55C2C3;" text="Report" textFill="#070707">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/noun-report-1092032.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets right="90.0" />
+                     </padding>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#Settings" prefHeight="58.0" prefWidth="281.0" style="-fx-background-radius: 50; -fx-background-color: #55C2C3;" text="Settings" textFill="#070707">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/noun-settings-716653.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets right="80.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="123.0" fitWidth="320.0" layoutX="19.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LOGO.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+   </children>
+</AnchorPane>

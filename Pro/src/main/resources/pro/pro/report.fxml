@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Report" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1000.0" style="-fx-background-color: #0C243C; -fx-background-radius: 35; -fx-background-color: #2B4865;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pro.pro.reportController">
+   <children>
+      <TitledPane fx:id="tp11" layoutX="48.0" layoutY="152.0" prefHeight="302.0" prefWidth="454.0" text="Member Report">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="229.0" prefWidth="431.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="81.0" text="Total Members :-">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="LbTotal" layoutX="146.0" layoutY="81.0" text="Total ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="359.0" layoutY="205.0" mnemonicParsing="false" onAction="#Download_MEM" style="-fx-background-radius: 30; -fx-background-color: #55C2C3;" text="Download">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="271.0" layoutY="204.0" mnemonicParsing="false" onAction="#Print_View_MEM" style="-fx-background-radius: 30; -fx-background-color: #55C2C3;" text="Print View">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </AnchorPane>
+         </content>
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+      </TitledPane>
+      <TitledPane fx:id="tp111" layoutX="516.0" layoutY="152.0" prefHeight="302.0" prefWidth="454.0" text="Payment Report">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="229.0" prefWidth="431.0">
+               <children>
+                  <Button layoutX="358.0" layoutY="207.0" mnemonicParsing="false" onAction="#Download_Pay" style="-fx-background-radius: 30; -fx-background-color: #55C2C3;" text="Download">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="269.0" layoutY="207.0" mnemonicParsing="false" onAction="#Print_PAY" style="-fx-background-radius: 30; -fx-background-color: #55C2C3;" text="Print View">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Label layoutX="41.0" layoutY="37.0" text="Today Payment :-">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="41.0" layoutY="74.0" text="Total Payment   :-">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbTodayTotal" layoutX="173.0" layoutY="37.0" text="Total">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbTotalPay" layoutX="173.0" layoutY="74.0" text="Total">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+      </TitledPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="schedulePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1000.0" style="-fx-background-color: #0C243C; -fx-background-radius: 35; -fx-background-color: #2B4865;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pro.pro.changePasswordController">
+   <children>
+      <AnchorPane layoutX="29.0" layoutY="27.0" prefHeight="56.0" prefWidth="944.0" style="-fx-background-color: #27445C; -fx-background-radius: 50;">
+         <children>
+            <Label layoutX="87.0" prefHeight="56.0" prefWidth="297.0" text="Schedule" textFill="WHITE">
+               <font>
+                  <Font name="Consolas" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="5.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="50.0" style="-fx-background-radius: 5; -fx-background-color: transparent;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="37.0">
+                     <image>
+                        <Image url="@pro/pro/Back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TabPane layoutX="95.0" layoutY="110.0" prefHeight="484.0" prefWidth="838.0" style="-fx-background-color: #27445C; -fx-background-radius: 30;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Workout Shedule">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="434.0" prefWidth="838.0">
+                     <children>
+                        <TextArea layoutX="-2.0" layoutY="-2.0" prefHeight="461.0" prefWidth="845.0" promptText="Enter Exercises" style="-fx-control-inner-background: #27445C; -fx-font-family: Consolas; -fx-text-fill: white;">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextArea>
+                        <Button layoutX="733.0" layoutY="405.0" mnemonicParsing="false" onAction="#btnScheduleEditOnAction" prefHeight="30.0" prefWidth="80.0" style="-fx-background-radius: 50;" text="Edit">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnSave" layoutX="733.0" layoutY="406.0" mnemonicParsing="false" onAction="#btnSchedulSaveOnAction" prefHeight="30.0" prefWidth="80.0" style="-fx-background-radius: 50;" text="Save" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnCancel" layoutX="644.0" layoutY="405.0" mnemonicParsing="false" onAction="#btnScheduleCancelOnAction" prefHeight="30.0" prefWidth="80.0" style="-fx-background-radius: 50;" text="Cancel" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Diet Plan">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="434.0" prefWidth="838.0">
+                     <children>
+                        <TextArea layoutX="-2.0" layoutY="-2.0" prefHeight="461.0" prefWidth="845.0" promptText="Enter Diet plan" style="-fx-control-inner-background: #27445C; -fx-font-family: Consolas; -fx-text-fill: white;">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </TextArea>
+                        <Button layoutX="733.0" layoutY="405.0" mnemonicParsing="false" onAction="#btnDietEditOnAction" prefHeight="30.0" prefWidth="80.0" style="-fx-background-radius: 50;" text="Edit">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnDietSave" layoutX="733.0" layoutY="406.0" mnemonicParsing="false" onAction="#btnDietSaveOnAction" prefHeight="30.0" prefWidth="80.0" style="-fx-background-radius: 50;" text="Save" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnDietCancel" layoutX="644.0" layoutY="405.0" mnemonicParsing="false" onAction="#btnDietCancelOnAction" prefHeight="30.0" prefWidth="80.0" style="-fx-background-radius: 50;" text="Cancel" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

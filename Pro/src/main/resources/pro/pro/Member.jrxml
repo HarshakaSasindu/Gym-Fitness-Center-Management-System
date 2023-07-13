@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Member" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="98d5e8da-f66e-4cc2-9c95-1ef5f5c7f1f7">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[Ik1lbWJlciIgLDE1LDE1LGY5N2E2MDE3LTgwOWQtNDY5NC05ZWZhLWI4MjVmZWFiNDZjNjsiRml0
+bmVzcyIgLDEyNiwxMzIsZTIyN2Q1ZmItZGI1OS00NDRjLTgyNmQtYThhM2U1MWU1ZmVkOw==]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (12)"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT *
+FROM "Fitness"
+	INNER JOIN "Member" ON 
+	 "Member"."Reg" = "Fitness"."Reg"]]>
+	</queryString>
+	<field name="Reg" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="Reg"/>
+		<property name="com.jaspersoft.studio.field.label" value="Reg"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Member"/>
+	</field>
+	<field name="Name" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="Name"/>
+		<property name="com.jaspersoft.studio.field.label" value="Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Member"/>
+	</field>
+	<field name="Hight" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="Hight"/>
+		<property name="com.jaspersoft.studio.field.label" value="Hight"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Member"/>
+	</field>
+	<field name="Weight" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="Weight"/>
+		<property name="com.jaspersoft.studio.field.label" value="Weight"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Member"/>
+	</field>
+	<field name="Aim" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="Aim"/>
+		<property name="com.jaspersoft.studio.field.label" value="Aim"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Member"/>
+	</field>
+	<field name="JoinDate" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="JoinDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="JoinDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Member"/>
+	</field>
+	<field name="Age" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="Age"/>
+		<property name="com.jaspersoft.studio.field.label" value="Age"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Member"/>
+	</field>
+	<field name="BMI" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="BMI"/>
+		<property name="com.jaspersoft.studio.field.label" value="BMI"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Fitness"/>
+	</field>
+	<field name="BMR" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="BMR"/>
+		<property name="com.jaspersoft.studio.field.label" value="BMR"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Fitness"/>
+	</field>
+	<title>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="116" y="0" width="323" height="50" uuid="75aa4638-940d-4961-b445-e0f2a3157fda"/>
+				<textElement>
+					<font fontName="SansSerif" size="36"/>
+				</textElement>
+				<text><![CDATA[SOLO FITNESS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="152" y="50" width="250" height="40" uuid="eecd247c-41fd-4bc3-aa7d-18344b965739"/>
+				<textElement>
+					<font size="21" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NEW MEMBER REPORT]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="615" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="30" width="100" height="20" uuid="6302b4e6-813e-4e9c-8339-c04a85cb6401"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REG NUMBER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="80" height="20" uuid="cd5d209b-935c-4110-bc3f-0c72f0a0c8d6"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="90" width="80" height="20" uuid="9ac8cfff-72b1-41a3-9883-4e81f09f5e83"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AGE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="120" width="100" height="20" uuid="9210a093-8ff9-474e-abbd-b8a1b4d04454"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JOINING DATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="150" width="80" height="20" uuid="6b355c13-8b74-466f-bb68-142c89c00503"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HEIGHT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="180" width="80" height="20" uuid="c0d473e4-c74b-4c30-9cd4-807bdd147c68"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[WEIGHT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="210" width="80" height="20" uuid="09c03041-0b34-402a-940d-26143194b83c"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BMI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="240" width="80" height="20" uuid="1a64e4f7-6a97-47d9-b955-25e914768c4d"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BMR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="270" width="80" height="20" uuid="2b51c3b6-472f-4540-a5b7-28c3d3bd1881"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AIM]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="269" width="350" height="22" uuid="fbc41fb8-917c-4982-bd15-932782733225"/>
+				<textElement>
+					<font size="13" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Aim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="180" width="350" height="22" uuid="e8398661-89c0-4abe-9b42-16ee411c4c02"/>
+				<textElement>
+					<font size="13" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Weight}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="148" width="350" height="22" uuid="e65c1846-9ddd-435f-9990-61e8afad1bce"/>
+				<textElement>
+					<font size="13" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Hight}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="119" width="350" height="22" uuid="e22e787f-ef4e-4957-915d-34a182b3be9e"/>
+				<textElement>
+					<font size="13" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{JoinDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="89" width="350" height="22" uuid="f3a61066-2178-4dcb-b567-faecce950cf2"/>
+				<textElement>
+					<font size="13" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="59" width="350" height="22" uuid="2b834d54-bc85-4b10-949a-c21aed08a9c5"/>
+				<textElement>
+					<font size="13" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="28" width="350" height="22" uuid="3be92744-7439-444d-97cb-d0ab5d7a58fc"/>
+				<textElement>
+					<font size="13" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Reg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="210" width="350" height="22" uuid="0a6b73eb-b2c0-4f7a-8f03-1c4348c422e3"/>
+				<textElement>
+					<font size="13" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BMI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="239" width="350" height="22" uuid="194ab2f2-2ff7-4d65-8e58-65c891674289"/>
+				<textElement>
+					<font size="13" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BMR}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<pageFooter>
+		<band height="52" splitType="Stretch">
+			<staticText>
+				<reportElement x="400" y="20" width="170" height="20" uuid="2353a075-f71c-45e4-ad53-e666a5618271"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Solo Fitness :- 071-1111789]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MemPaments" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5c709c0a-3a1c-42aa-b7c4-44ac64e81d09">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (12)"/>
+	<queryString language="SQL">
+		<![CDATA[Select * From Member,Payment]]>
+	</queryString>
+	<field name="Reg" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="Reg"/>
+		<property name="com.jaspersoft.studio.field.label" value="Reg"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Member"/>
+	</field>
+	<field name="Name" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="Name"/>
+		<property name="com.jaspersoft.studio.field.label" value="Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Member"/>
+	</field>
+	<field name="PayID" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="PayID"/>
+		<property name="com.jaspersoft.studio.field.label" value="PayID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Payment"/>
+	</field>
+	<field name="PayDate" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="PayDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="PayDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Payment"/>
+	</field>
+	<field name="EXDate" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="EXDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="EXDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Payment"/>
+	</field>
+	<field name="Price" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="Price"/>
+		<property name="com.jaspersoft.studio.field.label" value="Price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Payment"/>
+	</field>
+	<field name="COLUMN_14" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="Reg"/>
+		<property name="com.jaspersoft.studio.field.label" value="Reg"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Payment"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement x="120" y="10" width="314" height="40" uuid="82c602db-996d-4451-ba8b-22feb632fdac"/>
+				<textElement>
+					<font fontName="Cooper Black" size="33"/>
+				</textElement>
+				<text><![CDATA[Member Payments]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="121" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="120" height="20" uuid="464a4e30-4fd7-497a-8ff7-fbef05f5b055"/>
+				<textElement>
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REG Number :-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="44" width="120" height="26" uuid="20180290-dfd2-40b3-a4ea-d408abea6060"/>
+				<textElement>
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAME :-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="128" y="10" width="100" height="24" uuid="2e060f6b-8357-4008-b8f7-0385dc319cf3"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Reg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="128" y="44" width="100" height="24" uuid="8c3cd4e3-6615-4db4-85ef-479da03a32b5"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-11" y="80" width="581" height="1" uuid="29522bb2-b224-40e7-b82b-c6cd0844d41f"/>
+			</line>
+			<staticText>
+				<reportElement x="30" y="91" width="70" height="19" uuid="4388f117-2d2f-4dcf-957e-e40a71c3dd84"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payment ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="91" width="90" height="19" uuid="99346b53-9676-4370-9de3-c847d09becf5"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payment Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="91" width="130" height="19" uuid="bdbe6071-15eb-4425-8784-cf741dde41e2"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payment Expiry Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="91" width="70" height="19" uuid="3167ee3c-9edc-4039-abef-b7a2cb4a7b9c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-11" y="120" width="581" height="1" uuid="3a19857a-2a0c-4e67-9e92-af59af52c2ad"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="38" y="10" width="45" height="20" uuid="c4273de1-4b83-4419-9849-fa296ae363e0"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PayID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="10" width="90" height="20" uuid="3db96ca9-ea5d-412f-9669-12114481dbf4"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PayDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="10" width="90" height="20" uuid="cac86dc7-0f6c-4567-8ece-ec9db2cd1933"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EXDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="10" width="90" height="20" uuid="3d2dc75a-4166-43df-8ee8-24c7c4834a5a"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Price}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

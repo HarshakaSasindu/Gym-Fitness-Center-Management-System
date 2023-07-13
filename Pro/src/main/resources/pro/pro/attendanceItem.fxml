@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="hBoxMain" alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="944.0" style="-fx-background-color: #55C2C3; -fx-background-radius: 50;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pro.pro.AttendanceItemController">
+   <children>
+      <ImageView fx:id="img" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </ImageView>
+      <Label fx:id="name" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="267.0" text="Harshaka Sasindu" textFill="#222121">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="regNo" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="119.0" text="0011" textFill="#141414">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="time" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="240.0" text="08.30 am" textFill="#252323">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="btnPaid" layoutX="24.0" layoutY="20.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="152.0" style="-fx-background-radius: 50; -fx-background-color: lightgreen;" text="Paid" />
+            <Button fx:id="btnNotPaid" layoutX="24.0" layoutY="20.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="152.0" style="-fx-background-radius: 50; -fx-background-color: #FF8A8A;" text="Not Paid" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
